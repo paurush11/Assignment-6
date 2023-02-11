@@ -15,7 +15,7 @@ public class mainMethodImplementation {
 
 		Integer[] randomArray, orderedArray, partiallyOrderedArray, reverseOrderedArray;
 		InsertionSort insertionSort = new InsertionSort();
-		int n = 1000; // starting value for n
+		int n = 10000; // starting value for n
 		int numTrials = 5; // number of trials for each value of n
 
 		// Create datasets for different array orderings
