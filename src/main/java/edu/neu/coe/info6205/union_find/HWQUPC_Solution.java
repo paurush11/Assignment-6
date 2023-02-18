@@ -33,7 +33,6 @@ public class HWQUPC_Solution {
 	public static void main(String arg[]) {
 
 		int n = 100;
-
 		XYSeries series = new XYSeries("Pairs Count vs Node Count");
 		XYSeries series2 = new XYSeries("Pairs Count vs Node Count (NlogN)");
 		double m = 0.0;
@@ -41,20 +40,17 @@ public class HWQUPC_Solution {
 			System.out.println("Number of nodes: " + n);
 			int no_pairs = createHWQUPC(n);
 			series.add(n, no_pairs);
-
 			m = m + (no_pairs / (n * Math.log(n)));
-
 			n = n + 3000;
 		}
 
 		m = m / 7;
 		n = 100;
 		for (int i = 0; i < 7; i++) {
-
 			series2.add(n, m * (n * Math.log(n)));
-
 			n = n + 3000;
 		}
+		System.out.println(m);
 
 		XYSeriesCollection dataset = new XYSeriesCollection();
 		dataset.addSeries(series);

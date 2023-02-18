@@ -68,7 +68,7 @@ public class Timer {
           }
           final double result = meanLapTime();
           return result;
-        
+    	
     }
 
     /**
